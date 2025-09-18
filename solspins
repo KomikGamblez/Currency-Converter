@@ -1,1 +1,10 @@
-file:///C:/Users/hippi/Downloads/Sol%20Spins%20Website.pdf
+SolSpins.zip
+├── client/index.html
+├── client/css/style.css
+├── client/js/main.js
+├── client/assets/solana-logo.png
+├── server/server.js
+├── server/package.json
+├── server/README.md
+├── .gitignore
+└── README.md
