@@ -1,10 +1,103 @@
-SolSpins.zip
-├── client/index.html
-├── client/css/style.css
-├── client/js/main.js
-├── client/assets/solana-logo.png
-├── server/server.js
-├── server/package.json
-├── server/README.md
-├── .gitignore
-└── README.md
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SolSpins - Provably Fair Virtual Casino</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <img src="assets/solana-logo.png" alt="SolSpins" height="40">
+  <h1>SolSpins</h1>
+</header>
+
+<div id="wallet">
+  <p>Balance: <span id="balance">0</span> SOL Credits</p>
+  <p>Deposit Solana: DtAZ13mfWZTcTzyMGy6Go97rff4paVnfi4DcU3NufRFt</p>
+  <button id="googleLogin">Sign in with Google</button>
+  <button id="walletLogin">Connect Crypto Wallet</button>
+</div>
+
+<main id="games">
+  <h2>Games</h2>
+
+  <!-- Coinflip -->
+  <section id="coinflip">
+    <h3>Coinflip</h3>
+    <label>Bet Amount:</label>
+    <input type="number" id="cfAmount" placeholder="Amount">
+    <label>Choose Side:</label>
+    <select id="cfSide"><option value="heads">Heads</option><option value="tails">Tails</option></select>
+    <button id="cfCreate">Create Coinflip</button>
+  </section>
+
+  <!-- Crash -->
+  <section id="crash">
+    <h3>Crash</h3>
+    <button id="startCrash">Start Crash</button>
+    <p>Multiplier: <span id="crashMultiplier">1.0x</span></p>
+  </section>
+
+  <!-- Roulette -->
+  <section id="roulette">
+    <h3>Roulette</h3>
+    <label>Bet Number (0-36):</label>
+    <input type="number" id="rouletteNum" min="0" max="36">
+    <label>Bet Amount:</label>
+    <input type="number" id="rouletteAmount">
+    <button id="spinRoulette">Spin Roulette</button>
+  </section>
+
+  <!-- Mines -->
+  <section id="mines">
+    <h3>Mines</h3>
+    <label>Grid Size:</label>
+    <input type="number" id="minesGrid" value="5" min="2">
+    <label>Bombs:</label>
+    <input type="number" id="minesBombs" value="3" min="1">
+    <button id="playMines">Play Mines</button>
+  </section>
+</main>
+
+<section id="chat">
+  <h3>Community Chat</h3>
+  <div id="chatBox" style="height:200px;overflow:auto;border:1px solid #555;padding:6px;margin-bottom:6px;"></div>
+  <input type="text" id="chatInput" placeholder="Type a message">
+  <button id="chatSend">Send</button>
+</section>
+
+<script src="js/main.js"></script>
+<script>
+  // Coinflip
+  document.getElementById('cfCreate').onclick = () => {
+    const amt = document.getElementById('cfAmount').value;
+    const side = document.getElementById('cfSide').value;
+    createCoinflip(amt, side);
+  };
+
+  // Crash
+  document.getElementById('startCrash').onclick = () => {
+    startCrash();
+    const multiplierEl = document.getElementById('crashMultiplier');
+    const interval = setInterval(() => {
+      if(!crashInPlay) { clearInterval(interval); return; }
+      multiplierEl.textContent = crashMultiplier.toFixed(2) + 'x';
+    }, 100);
+  };
+
+  // Roulette
+  document.getElementById('spinRoulette').onclick = () => {
+    const num = document.getElementById('rouletteNum').value;
+    const amt = document.getElementById('rouletteAmount').value;
+    spinRoulette(num, amt);
+  };
+
+  // Mines
+  document.getElementById('playMines').onclick = () => {
+    const grid = document.getElementById('minesGrid').value;
+    const bombs = document.getElementById('minesBombs').value;
+    playMines(grid, bombs);
+  };
+</script>
+</body>
+</html>
